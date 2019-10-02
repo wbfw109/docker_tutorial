@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - /o/GitHub/repositories/docker_tutorial/compose_test/data:/code
+    environment:
+      FLASK_ENV: development
+  redis:
+    image: "redis:alpine"

@@ -1,0 +1,4 @@
+FROM busybox # 최소한의 운영체제 기능만 제공
+
+VOLUME /var/lib/mysql
+VOLUME /var/log
